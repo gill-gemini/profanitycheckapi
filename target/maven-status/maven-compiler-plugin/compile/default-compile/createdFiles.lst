@@ -1,0 +1,6 @@
+com/example/demo/model/ScanContentResponse.class
+com/example/demo/DemoApplication.class
+com/example/demo/model/AuthenticationResponse.class
+com/example/demo/controller/RestResource.class
+com/example/demo/process/inspectFile.class
+com/example/demo/service/SalesforceAPIService.class
