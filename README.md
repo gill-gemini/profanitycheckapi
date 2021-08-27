@@ -12,11 +12,11 @@ The app on heroku is running on free dynos. So it will give time reachout error 
 
 `POST`
 
- https://scancontent.herokuapp.com`/censorcontent`
+ https://scancontent.herokuapp.com `/censorcontent`
 
   This endpoint returns the censor content of the file in the response.
 
-  https://scancontent.herokuapp.com`/scancontent`
+  https://scancontent.herokuapp.com `/scancontent`
 
   This endpoint returns True , if there are obsene words in the file and an array of obsene words which were found in the file.
 
