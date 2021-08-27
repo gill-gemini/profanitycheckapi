@@ -50,6 +50,7 @@ Profanity Check API helps to scan and censor txt documents for obsene words(.txt
 
 
   * **BUILD LOCAL INSTRUCTIONS**
+    
     To run it locally from your terminal /CMD.
 
       1) cd <directory of the project>
