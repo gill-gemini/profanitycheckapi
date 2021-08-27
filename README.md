@@ -1,6 +1,6 @@
 # profanitycheck
 
-Profanity Check API helps to scan and censor txt documents for obsene words(.txt , .csv extensions). There is no authentication currently , so API is accessible , when you hit the end point. The app is currently deployed to Heroku. 
+Profanity Check API helps to scan and censor txt documents for obsene words(.txt , .csv extensions). There is no authentication currently , so API is accessible , when you hit the end point. The app is currently deployed to Heroku. The API is built with Java and Spring framework. Integrations tests have been written , which test all the endpoints and the scan logic.
 
 * **URL**
 
@@ -54,14 +54,18 @@ Profanity Check API helps to scan and censor txt documents for obsene words(.txt
     To run it locally from your terminal /CMD.
 
       1) cd <directory of the project>
+  
       2)  mvn clean install
+  
       3)  java -jar target/demo-0.0.1-SNAPSHOT.jar
+  
         For third step make sure , you have the jar file under the target folder or change it accordingly.
   
       To run it through the editor , clone the repo , import to your editor . I personally used IntelliJ to run and code the app. 
   
   * **DEPLOY INSTRUCTIONS HEROKU**
-  
+      Follow the instructions on the page to deploy to Heroku.
+      https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
   
   
   
