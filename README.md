@@ -1,6 +1,6 @@
 # profanitycheck
 
-Profanity Check API helps to scan and censor txt documents for obsene words(.txt , .csv extensions). There is no authentication currently , so API is accessible , when you hit the end point. The app is currently deployed to Heroku. The API is built with Java and Spring framework. Integrations tests have been written , which test all the endpoints and the scan logic. Currently the list of banned words is fetched from this google link. Currently this link is hardcoded and will be moved to config file in the next phase.
+Profanity Check API helps to scan and censor txt documents for obsene words(.txt , .csv extensions). There is no authentication currently , so API is accessible , when you hit the end point. The app is currently deployed to Heroku. The API is built with Java and Spring framework. Integrations tests have been written , which test all the endpoints and the scan logic. The list of banned words is fetched from the google link mentioned below. Currently this link is hardcoded and will be moved to config file in the next phase.
 
 https://docs.google.com/spreadsheets/d/1hIEi2YG3ydav1E06Bzf2mQbGZ12kh2fe4ISgLg_UBuM/export?format=csv
 
