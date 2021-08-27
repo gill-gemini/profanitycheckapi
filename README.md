@@ -25,6 +25,8 @@ To run it locally from your terminal /CMD.
   
 To run it through the editor , clone the repo , import to your editor . I personally used IntelliJ to run and code the app. 
   
+  The following snapshots are from the postman , while the testing the localhost and Heorku app.
+  
   
   
   <img width="943" alt="Screenshot 2021-08-27 at 16 53 56" src="https://user-images.githubusercontent.com/1822240/131139846-70be8790-e929-49ba-a233-5ca308c251c9.png">
