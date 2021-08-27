@@ -2,7 +2,7 @@
 
 Profanity Check API helps to scan and censor txt (.txt , .csv extensions) documents for obsene words. There is no authentication currently , so API is accessible , when you hit the end point. The app is currently deployed to Heroku. 
 
-**URL **
+* **URL**
 https://scancontent.herokuapp.com/
 
 The app on heroku is running on free dynos. So it will give time reachout error for first hit. After the server is awake , it will serve your requests.
