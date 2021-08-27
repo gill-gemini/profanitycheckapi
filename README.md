@@ -38,14 +38,19 @@ Profanity Check API helps to scan and censor txt documents for obsene words(.txt
       **Content:** `{ How are you **** }`
 
   * **SAMPLE CALL**
+  
     curl --request POST --data-binary watchyourtonguefuck  https://scancontent.herokuapp.com/censorcontent
+    
     curl --request POST --data-binary watchyourtonguefuck  https://scancontent.herokuapp.com/scancontent
     
     A sample call from POSTMAN
-    <img width="943" alt="Screenshot 2021-08-27 at 16 53 56" src="https://user-images.githubusercontent.com/1822240/131139846-70be8790-e929-49ba-a233-5ca308c251c9.png">
+    
+   <img width="851" alt="Screenshot 2021-08-27 at 17 03 53" src="https://user-images.githubusercontent.com/1822240/131172774-a19b477c-f188-4d94-bdac-5eb176dfe6c3.png">
 
 
-To run it locally from your terminal /CMD.
+
+  
+  To run it locally from your terminal /CMD.
 
 1) cd <directory of the project>
 2)  mvn clean install
