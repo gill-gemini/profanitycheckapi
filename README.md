@@ -1,6 +1,8 @@
 # profanitycheck
 
-Profanity Check API helps to scan and censor txt documents for obsene words(.txt , .csv extensions). There is no authentication currently , so API is accessible , when you hit the end point. The app is currently deployed to Heroku. The API is built with Java and Spring framework. Integrations tests have been written , which test all the endpoints and the scan logic.
+Profanity Check API helps to scan and censor txt documents for obsene words(.txt , .csv extensions). There is no authentication currently , so API is accessible , when you hit the end point. The app is currently deployed to Heroku. The API is built with Java and Spring framework. Integrations tests have been written , which test all the endpoints and the scan logic. 
+
+The project also contains a service for fetching large contentversion from the Salesforce Environment. This fetching service was written for fetching large files (>12MB) from the SOAP API. This particular fetching service is work in progess and not complete.
 
 * **URL**
 
