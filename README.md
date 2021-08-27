@@ -27,15 +27,15 @@ Profanity Check API helps to scan and censor txt documents for obsene words(.txt
     * **Code:** 200 <br />
     **Content:** `{ "result" : true , ["obscene","obscene","obscene","obscene"] }`
 
- https://scancontent.herokuapp.com `/censorcontent`
+  https://scancontent.herokuapp.com `/censorcontent`
     * **Data Params**
     * **Body** Binary of the txt file
 
-  This endpoint returns the censor content of the file in the response.
+    This endpoint returns the censor content of the file in the response.
  
- * **Success Response:**
-    * **Code:** 200 <br />
-    **Content:** `{ How are you **** }`
+    * **Success Response:**
+      * **Code:** 200 <br />
+      **Content:** `{ How are you **** }`
 
 
 
