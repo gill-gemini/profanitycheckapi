@@ -66,7 +66,9 @@ The project also contains a service for fetching large contentversion from the S
       To run it through the editor , clone the repo , import to your editor . I personally used IntelliJ to run and code the app. 
   
   * **DEPLOY INSTRUCTIONS HEROKU**
+  
       Follow the instructions on the page to deploy to Heroku.
+      
       https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
   
   
