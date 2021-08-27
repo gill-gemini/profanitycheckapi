@@ -17,8 +17,11 @@ Profanity Check API helps to scan and censor txt documents for obsene words(.txt
   `POST`
 
   https://scancontent.herokuapp.com `/scancontent`
-
-  This endpoint returns True , if there are obsene words in the file and an array of obsene words which were found in the file.
+  * **Data Params**
+    * **Body** Binary of the txt file
+  
+  
+  This endpoint returns a boolean value and a List. If there are obsene words in the file and an array of obsene words which were found in the file.
   
   * **Success Response:**
     * **Code:** 200 <br />
