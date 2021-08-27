@@ -55,7 +55,7 @@ The project also contains a service for fetching large contentversion from the S
 
   * **BUILD LOCAL INSTRUCTIONS**
     
-    To run it locally from your terminal /CMD.
+    To run it locally from your terminal /CMD. Maven should be installed.
 
       1) cd "Directory/project"
   
