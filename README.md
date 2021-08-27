@@ -55,7 +55,7 @@ The project also contains a service for fetching large contentversion from the S
     
     To run it locally from your terminal /CMD.
 
-      1) cd Directory of the project
+      1) cd "Directory/project"
   
       2)  mvn clean install
   
