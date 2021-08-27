@@ -4,17 +4,17 @@ Profanity Check API helps to scan and censor txt documents for obsene words(.txt
 
 * **URL**
 
-https://scancontent.herokuapp.com/
+  https://scancontent.herokuapp.com/
 
-OR
+  OR
 
-localhost:8080
+  localhost:8080
 
-The app on heroku is running on free dynos. So it will give time reachout error for first hit. After the server is awake , it will serve your requests.
+  The app on heroku is running on free dynos. So it will give time reachout error for first hit. After the server is awake , it will serve your requests.
 
 * **METHOD && ENDPOINTS**
 
-`POST`
+  `POST`
 
   https://scancontent.herokuapp.com `/scancontent`
 
@@ -22,7 +22,7 @@ The app on heroku is running on free dynos. So it will give time reachout error 
   
   * **Success Response:**
     * **Code:** 200 <br />
-    **Content:** `{ id : 12 }`
+    **Content:** `{ "result" : true , ["obseneword","obseneword","obseneword","obseneword"] }`
 
  https://scancontent.herokuapp.com `/censorcontent`
 
