@@ -1,6 +1,7 @@
 # profanitycheck
 
-Profanity Check API helps to scan and censor txt documents for obsene words. There is no authentication currently , so API accessible , when you hit the end point.
+Profanity Check API helps to scan and censor txt documents for obsene words. There is no authentication currently , so API accessible , when you hit the end point. The app is currently deployed to Heroku. 
+https://scancontent.herokuapp.com/
 
 There are two endpoints for the API.
 
