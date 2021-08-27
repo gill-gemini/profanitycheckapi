@@ -37,6 +37,9 @@ Profanity Check API helps to scan and censor txt documents for obsene words(.txt
       * **Code:** 200 <br />
       **Content:** `{ How are you **** }`
 
+  * **SAMPLE CALL**
+    
+
 
 
 To run it locally from your terminal /CMD.
