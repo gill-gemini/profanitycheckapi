@@ -8,6 +8,8 @@ https://scancontent.herokuapp.com/
 The app on heroku is running on free dynos. So it will give time reachout error for first hit. After the server is awake , it will serve your requests.
 
 **METHOD**
+
+`POST`
 There are two endpoints for the API.
 
   /censorcontent
