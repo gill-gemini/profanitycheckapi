@@ -60,6 +60,8 @@ Profanity Check API helps to scan and censor txt documents for obsene words(.txt
   
       To run it through the editor , clone the repo , import to your editor . I personally used IntelliJ to run and code the app. 
   
+  * **DEPLOY INSTRUCTIONS HEROKU**
+  
   
   
   
