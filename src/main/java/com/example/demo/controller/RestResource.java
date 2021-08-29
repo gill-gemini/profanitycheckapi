@@ -20,7 +20,7 @@ public class RestResource {
                 HttpStatus.OK);
     }
 
-    @PostMapping("/censorcontent")
+    @PostMapping("/v1/censorcontent")
     public ResponseEntity<String> censorFile(@RequestBody String body) {
 
         inspectFile inspect =  new inspectFile();
@@ -31,7 +31,7 @@ public class RestResource {
                 HttpStatus.OK);
     }
 
-    @PostMapping("/scancontent")
+    @PostMapping("/v1/scancontent")
     public ResponseEntity<String> scanFile(@RequestBody String body) throws JsonProcessingException {
 
         inspectFile inspect =  new inspectFile();

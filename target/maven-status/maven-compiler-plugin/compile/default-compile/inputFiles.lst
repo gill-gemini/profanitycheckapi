@@ -1,6 +1,6 @@
-/Users/gill.bilal/Desktop/demoone/src/main/java/com/example/demo/model/ScanContentResponse.java
-/Users/gill.bilal/Desktop/demoone/src/main/java/com/example/demo/DemoApplication.java
-/Users/gill.bilal/Desktop/demoone/src/main/java/com/example/demo/model/AuthenticationResponse.java
-/Users/gill.bilal/Desktop/demoone/src/main/java/com/example/demo/controller/RestResource.java
-/Users/gill.bilal/Desktop/demoone/src/main/java/com/example/demo/process/inspectFile.java
-/Users/gill.bilal/Desktop/demoone/src/main/java/com/example/demo/service/SalesforceAPIService.java
+/Users/gill.bilal/Desktop/profcheck/src/main/java/com/example/demo/model/ScanContentResponse.java
+/Users/gill.bilal/Desktop/profcheck/src/main/java/com/example/demo/service/SalesforceAPIService.java
+/Users/gill.bilal/Desktop/profcheck/src/main/java/com/example/demo/process/inspectFile.java
+/Users/gill.bilal/Desktop/profcheck/src/main/java/com/example/demo/model/AuthenticationResponse.java
+/Users/gill.bilal/Desktop/profcheck/src/main/java/com/example/demo/controller/RestResource.java
+/Users/gill.bilal/Desktop/profcheck/src/main/java/com/example/demo/DemoApplication.java

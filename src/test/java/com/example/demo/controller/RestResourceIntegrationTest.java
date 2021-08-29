@@ -37,7 +37,7 @@ class RestResourceIntegrationTest {
     @Test
     public void censorFilewithCurseWord() throws Exception {
         RequestBuilder request = MockMvcRequestBuilders
-                .post("/censorContent")
+                .post("/v1/censorcontent")
                 .content("Hi How are you. Test word : FUCK");
         MvcResult result = mvc.perform(request).andReturn();
 
@@ -47,7 +47,7 @@ class RestResourceIntegrationTest {
     @Test
     public void censorFilewithoutCurseWord() throws Exception {
         RequestBuilder request = MockMvcRequestBuilders
-                .post("/censorContent")
+                .post("/v1/censorcontent")
                 .content("Hi How are you. Test word : APPLE");
         MvcResult result = mvc.perform(request).andReturn();
 
@@ -57,7 +57,7 @@ class RestResourceIntegrationTest {
     @Test
     void scanFilewithCurseWord() throws Exception {
         RequestBuilder request = MockMvcRequestBuilders
-                .post("/scanContent")
+                .post("/v1/scancontent")
                 .content("Test word : FUCK");
         MvcResult result = mvc.perform(request).andReturn();
         ArrayList arrayWords = new ArrayList();
@@ -71,7 +71,7 @@ class RestResourceIntegrationTest {
     @Test
     void scanFilewithoutCurseWord() throws Exception {
         RequestBuilder request = MockMvcRequestBuilders
-                .post("/scanContent")
+                .post("/v1/scancontent")
                 .content("Test word : APPLE");
         MvcResult result = mvc.perform(request).andReturn();
         ArrayList arrayWords = new ArrayList();

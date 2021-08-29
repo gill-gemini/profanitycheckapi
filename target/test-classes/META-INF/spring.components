@@ -1,4 +1,4 @@
 #
-#Fri Aug 27 15:24:48 EEST 2021
+#Fri Aug 27 16:44:50 EEST 2021
 com.example.demo.DemoApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
 com.example.demo.controller.RestResource=org.springframework.stereotype.Component
