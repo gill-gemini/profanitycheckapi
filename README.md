@@ -68,11 +68,12 @@ The project also contains a service for fetching large contentversion from the S
       To run it through the editor , clone the repo , import to your editor . I personally used IntelliJ to run and code the app. 
 
 * **RUN TESTS LOCALLY**
+   
    From Intellij , one can run the tests after opening the RestResourceIntegrationTest classs.
    
    From terminal, after moving to the directory of the project.
    
-    `mvn -Dtest=RestResourceIntegrationTest test
+    `mvn -Dtest=RestResourceIntegrationTest test`
   
 * **DEPLOY INSTRUCTIONS HEROKU**
   
