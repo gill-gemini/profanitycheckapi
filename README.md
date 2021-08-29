@@ -72,7 +72,7 @@ The project also contains a service for fetching large contentversion from the S
    
    From terminal, after moving to the directory of the project.
    
-    mvn -Dtest=RestResourceIntegrationTest test
+    `mvn -Dtest=RestResourceIntegrationTest test
   
 * **DEPLOY INSTRUCTIONS HEROKU**
   
