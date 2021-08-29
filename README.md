@@ -46,6 +46,7 @@ The project also contains a service for fetching large contentversion from the S
       **Content:** `{ How are you **** }`
 
   * **SAMPLE CALL**
+  
   In this sample call , dombo is a banned word.
   
     curl --request POST --data-binary watchyourdombo https://scancontent.herokuapp.com/v1/censorcontent
