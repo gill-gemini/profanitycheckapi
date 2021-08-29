@@ -47,9 +47,9 @@ The project also contains a service for fetching large contentversion from the S
 
   * **SAMPLE CALL**
   
-    curl --request POST --data-binary watchyourtonguefuck https://scancontent.herokuapp.com/censorcontent
+    curl --request POST --data-binary watchyourtongue{obcsene word from doc} https://scancontent.herokuapp.com/censorcontent
     
-    curl --request POST --data-binary watchyourtonguefuck https://scancontent.herokuapp.com/scancontent
+    curl --request POST --data-binary watchyourtongue{obcsene word from doc} https://scancontent.herokuapp.com/scancontent
     
     A sample call from POSTMAN
     
