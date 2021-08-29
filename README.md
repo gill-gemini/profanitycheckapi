@@ -8,13 +8,17 @@ The project also contains a service for fetching large contentversion from the S
 
 * **URL**
 
+  The app on heroku is running on free dynos. So it will give time reachout error for first hit. After the server is awake , it will serve your requests.
+  
   https://scancontent.herokuapp.com/
 
   OR
+  
+  If running locally.
 
   localhost:8080
 
-  The app on heroku is running on free dynos. So it will give time reachout error for first hit. After the server is awake , it will serve your requests.
+  
 
 * **METHOD && ENDPOINTS**
 
@@ -30,7 +34,7 @@ The project also contains a service for fetching large contentversion from the S
     * **Code:** 200 <br />
     **Content:** `{ "result" : true , ["obscene","obscene","obscene","obscene"] }`
 
-    `POST``/v1/censorcontent`
+  `POST` `/v1/censorcontent`
     
     * **Data Params**
     * **Body** Binary of the txt file
