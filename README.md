@@ -18,9 +18,8 @@ The project also contains a service for fetching large contentversion from the S
 
 * **METHOD && ENDPOINTS**
 
-  `POST`
-
-  https://scancontent.herokuapp.com `/scancontent`
+  `POST` `/v1/scancontent`
+  
   * **Data Params**
     * **Body** Binary of the txt file
   
@@ -31,7 +30,8 @@ The project also contains a service for fetching large contentversion from the S
     * **Code:** 200 <br />
     **Content:** `{ "result" : true , ["obscene","obscene","obscene","obscene"] }`
 
-  https://scancontent.herokuapp.com `/censorcontent`
+    `POST``/v1/censorcontent`
+    
     * **Data Params**
     * **Body** Binary of the txt file
 
