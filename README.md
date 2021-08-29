@@ -82,9 +82,12 @@ The project also contains a service for fetching large contentversion from the S
       
       https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
   
+ * **NOTES AND ENHANCMENTS** 
   
-  
- 
+  1. Salesforce client only utilizes the /scancontent endpoint.
+  2. Dockerized version of the app will be implemented soon.
+  3. Logging logic will be implemented.
+  4. Logic for files >12 MB is partly implemented and will be taken as next feature.
 
  
 
