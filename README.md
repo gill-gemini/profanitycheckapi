@@ -28,7 +28,7 @@ The project also contains a service for fetching large contentversion from the S
     * **Body** Binary of the txt file
   
   
-  This endpoint returns a boolean value and a List. If there are obsene words in the file and an array of obsene words which were found in the file.
+  This endpoint returns a boolean value and a List. If there are obsene words in the file, the response returns an array of obsene words which were found in the file and boolean value as true.
   
   * **Success Response:**
     * **Code:** 200 <br />
