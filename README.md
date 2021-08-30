@@ -87,6 +87,8 @@ The project also contains a service for fetching large contentversion from the S
     `mvn -Dtest=RestResourceIntegrationTest test`
   
 * **DEPLOY INSTRUCTIONS HEROKU**
+
+      heroku login
   
       git init , add , commit 
       
