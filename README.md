@@ -65,7 +65,8 @@ The project also contains a service for fetching large contentversion from the S
        Java version : java 12.0.2 
     
     Not Mandatory but preferred.
-    Intellij , I personally started and teste project from Intellij Community 2019.2
+    Intellij , I personally started and tested project from Intellij Community 2019.2.
+    
     Spring Boot Extension in IntelliJ.
     
     To run it locally from your terminal /CMD. 
