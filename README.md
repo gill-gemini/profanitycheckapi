@@ -60,7 +60,7 @@ The project also contains a service for fetching large contentversion from the S
 
     Dependencies:
        
-       Maven 
+       Maven 3.8.1
        
        Java version : java 12.0.2 
     
