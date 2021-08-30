@@ -57,6 +57,7 @@ The project also contains a service for fetching large contentversion from the S
 * **BUILD LOCAL INSTRUCTIONS**
 
     Dependencies:
+       
        Maven 
        
        Java version : java 12.0.2 
