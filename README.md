@@ -57,7 +57,7 @@ The project also contains a service for fetching large contentversion from the S
 * **BUILD LOCAL INSTRUCTIONS**
 
     Dependencies:
-       Maven
+       Maven ,
        java 12.0.2 
     
     Not Mandatory but preferred.
