@@ -53,6 +53,8 @@ The project also contains a service for fetching large contentversion from the S
     
     curl --request POST --data-binary watchyourtonguedombo https://scancontent.herokuapp.com/v1/scancontent
     
+    
+    I will recommend to test from POSTMAN , where one can attach the file from disc and select the option binary.
 
 * **BUILD LOCAL INSTRUCTIONS**
 
