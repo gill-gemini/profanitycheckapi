@@ -87,8 +87,16 @@ The project also contains a service for fetching large contentversion from the S
   
 * **DEPLOY INSTRUCTIONS HEROKU**
   
-      Follow the instructions on the page to deploy to Heroku.
+      git init , add , commit 
       
+      For already created Heroku app from UI.
+      heroku git:remote -a {Heroku App Name}
+      
+      heroku create
+      
+      git push heroku master
+      
+      Follow the instructions on the page to deploy to Heroku.
       https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
   
  * **NOTES AND ENHANCMENTS** 
