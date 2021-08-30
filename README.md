@@ -64,6 +64,7 @@ The project also contains a service for fetching large contentversion from the S
     
     Not Mandatory but preferred.
     Intellij , I personally started and teste project from Intellij Community 2019.2
+    Spring Boot Extension in IntelliJ.
     
     To run it locally from your terminal /CMD. 
 
