@@ -55,8 +55,15 @@ The project also contains a service for fetching large contentversion from the S
     
 
 * **BUILD LOCAL INSTRUCTIONS**
+
+    Dependencies:
+       Maven
+       java 12.0.2 
     
-    To run it locally from your terminal /CMD. Maven should be installed.
+    Not Mandatory but preferred.
+    Intellij , I personally started and teste project from Intellij.
+    
+    To run it locally from your terminal /CMD. 
 
       1) cd "Directory/project"
   
