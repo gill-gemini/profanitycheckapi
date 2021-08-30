@@ -59,7 +59,7 @@ The project also contains a service for fetching large contentversion from the S
     Dependencies:
        Maven 
        
-       java 12.0.2 
+       Java version : java 12.0.2 
     
     Not Mandatory but preferred.
     Intellij , I personally started and teste project from Intellij.
