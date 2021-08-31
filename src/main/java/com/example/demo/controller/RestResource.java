@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 @RestController
@@ -24,19 +25,23 @@ public class RestResource {
     public ResponseEntity<String> censorFile(@RequestBody String body) {
 
         inspectFile inspect =  new inspectFile();
-        String output;
-        output = inspect.getCensoredText(body);
+        String output = null;
+        try {
+            output = inspect.getCensoredText(body);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return new ResponseEntity<>(
                  output,
                 HttpStatus.OK);
     }
 
     @PostMapping("/v1/scancontent")
-    public ResponseEntity<String> scanFile(@RequestBody String body) throws JsonProcessingException {
+    public ResponseEntity<String> scanFile(@RequestBody String body) throws IOException {
 
         inspectFile inspect =  new inspectFile();
         Boolean output;
-        ArrayList<String> arrayWords = inspect.scanCurseWords(body);
+        ArrayList<String> arrayWords = inspectFile.scanCurseWords(body);
         ScanContentResponse resp = new ScanContentResponse(!arrayWords.isEmpty(),arrayWords);
         String serialized = new ObjectMapper().writeValueAsString(resp);
         return new ResponseEntity<>(

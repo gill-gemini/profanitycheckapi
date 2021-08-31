@@ -1,25 +1,19 @@
 package com.example.demo.process;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 
 public class inspectFile {
 
     private static int largestWordLength = 0;
-
     private static Map<String, String[]> allBadWords = new HashMap<String, String[]>();
 
     /**
      * Iterates over a String input and checks whether any curse words were found
      */
-    public static String getCensoredText(final String input) {
+    public static String getCensoredText(final String input) throws IOException {
         getCurseWords();
         if (input == null) {
             return "";
@@ -70,7 +64,7 @@ public class inspectFile {
     /**
     *Returns True , if the input string contains curse words
     */
-    public static ArrayList<String> scanCurseWords (final String input) {
+    public static ArrayList<String> scanCurseWords (final String input) throws IOException {
 
         ArrayList<String> curseWordsFound = new ArrayList<>();
         String changedInput = input;
@@ -105,15 +99,30 @@ public class inspectFile {
         return curseWordsFound;
     }
 
+
+    private static String  getURL() throws IOException{
+        String apiUrl = null;
+        try (InputStream input = new FileInputStream("src/main/resources/application.properties")) {
+            Properties prop = new Properties();
+            prop.load(input);
+            apiUrl = prop.getProperty("url").trim();
+        } catch(IOException e){
+
+        }
+    return apiUrl;
+    }
+
+
     /**
      * Retreives the curse words from a File from a URL
      */
-    private static void getCurseWords() {
+    private static void getCurseWords() throws IOException {
         int readCounter = 0;
-        try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(new URL("https://docs.google.com/spreadsheets/d/1hIEi2YG3ydav1E06Bzf2mQbGZ12kh2fe4ISgLg_UBuM/export?format=csv").openConnection().getInputStream()));
 
-            String currentLine = "";
+        String location = getURL();
+        // BufferedReader reader = new BufferedReader(new InputStreamReader(new URL("https://docs.google.com/spreadsheets/d/1hIEi2YG3ydav1E06Bzf2mQbGZ12kh2fe4ISgLg_UBuM/export?format=csv").openConnection().getInputStream()));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(new URL(location).openConnection().getInputStream()));
+        String currentLine = "";
             while ((currentLine = reader.readLine()) != null) {
                 readCounter++;
                 String[] content = null;
@@ -145,8 +154,5 @@ public class inspectFile {
                 } catch (Exception except) {
                 }
             }
-        } catch (IOException except) {
-        }
     }
-
 }
