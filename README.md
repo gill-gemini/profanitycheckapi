@@ -8,30 +8,34 @@ The project also contains a service for fetching large contentversion from the S
 
 * **URL**
 
+  The app on heroku is running on free dynos. So it will give time reachout error for first hit. After the server is awake , it will serve your requests.
+  
   https://scancontent.herokuapp.com/
 
   OR
+  
+  If running locally.
 
   localhost:8080
 
-  The app on heroku is running on free dynos. So it will give time reachout error for first hit. After the server is awake , it will serve your requests.
+  
 
 * **METHOD && ENDPOINTS**
 
-  `POST`
-
-  https://scancontent.herokuapp.com `/scancontent`
+  `POST` `/v1/scancontent`
+  
   * **Data Params**
     * **Body** Binary of the txt file
   
   
-  This endpoint returns a boolean value and a List. If there are obsene words in the file and an array of obsene words which were found in the file.
+  This endpoint returns a boolean value and a List. If there are obsene words in the file, the response returns an array of obsene words which were found in the file and boolean value as true.
   
   * **Success Response:**
     * **Code:** 200 <br />
     **Content:** `{ "result" : true , ["obscene","obscene","obscene","obscene"] }`
 
-  https://scancontent.herokuapp.com `/censorcontent`
+  `POST` `/v1/censorcontent`
+    
     * **Data Params**
     * **Body** Binary of the txt file
 
@@ -43,19 +47,29 @@ The project also contains a service for fetching large contentversion from the S
 
   * **SAMPLE CALL**
   
-    curl --request POST --data-binary watchyourtonguefuck https://scancontent.herokuapp.com/censorcontent
+  In this sample call , dombo is a banned word.
+  
+    curl --request POST --data-binary watchyourdombo https://scancontent.herokuapp.com/v1/censorcontent
     
-    curl --request POST --data-binary watchyourtonguefuck https://scancontent.herokuapp.com/scancontent
+    curl --request POST --data-binary watchyourtonguedombo https://scancontent.herokuapp.com/v1/scancontent
     
-    A sample call from POSTMAN
     
-   <img width="851" alt="Screenshot 2021-08-27 at 17 03 53" src="https://user-images.githubusercontent.com/1822240/131172774-a19b477c-f188-4d94-bdac-5eb176dfe6c3.png">
-
-
+    I will recommend to test from POSTMAN , where one can attach the file from disc and select the option binary.
 
 * **BUILD LOCAL INSTRUCTIONS**
+
+    Dependencies:
+       
+       Maven 3.8.1
+       
+       Java version : java 12.0.2 
     
-    To run it locally from your terminal /CMD. Maven should be installed.
+    Not Mandatory but preferred.
+    Intellij , I personally started and tested project from Intellij Community 2019.2.
+    
+    Spring Boot Extension in IntelliJ.
+    
+    To run it locally from your terminal /CMD. 
 
       1) cd "Directory/project"
   
@@ -76,14 +90,27 @@ The project also contains a service for fetching large contentversion from the S
     `mvn -Dtest=RestResourceIntegrationTest test`
   
 * **DEPLOY INSTRUCTIONS HEROKU**
+
+      heroku login
   
-      Follow the instructions on the page to deploy to Heroku.
+      git init , add , commit 
       
+      For already created Heroku app from UI.
+      heroku git:remote -a {Heroku App Name}
+      
+      heroku create
+      
+      git push heroku master
+      
+      Follow the instructions on the page to deploy to Heroku.
       https://devcenter.heroku.com/articles/deploying-spring-boot-apps-to-heroku
   
+ * **NOTES AND ENHANCMENTS** 
   
-  
- 
+  1. Salesforce client only utilizes the /scancontent endpoint.
+  2. Dockerized version of the app will be implemented soon.
+  3. Logging logic will be implemented.
+  4. Logic for files >12 MB is partly implemented and will be taken as next feature.
 
  
 
