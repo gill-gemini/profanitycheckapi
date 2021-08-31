@@ -1,8 +1,6 @@
 # profanitycheck
 
-Profanity Check API helps to scan and censor txt documents for obsene words(.txt , .csv extensions). There is no authentication currently , so API is accessible , when you hit the end point. The app is currently deployed to Heroku. The API is built with Java and Spring framework. Integrations tests have been written , which test all the endpoints and the scan logic. The list of banned words is fetched from the google link mentioned below. Currently this link is hardcoded and will be moved to config file in the next phase.
-
-https://docs.google.com/spreadsheets/d/1hIEi2YG3ydav1E06Bzf2mQbGZ12kh2fe4ISgLg_UBuM/export?format=csv
+Profanity Check API helps to scan and censor txt documents for obsene words(.txt , .csv extensions). There is no authentication currently , so API is accessible , when you hit the end point. The app is currently deployed to Heroku. The API is built with Java and Spring framework. Integrations tests have been written , which test all the endpoints and the scan logic. 
 
 The project also contains a service for fetching large contentversion from the Salesforce Environment. This fetching service was written for fetching large files (>12MB) from the SOAP API. This particular fetching service is work in progress and not complete.
 
@@ -55,6 +53,12 @@ The project also contains a service for fetching large contentversion from the S
     
     
     I will recommend to test from POSTMAN , where one can attach the file from disc and select the option binary.
+    
+* **Configuration**
+
+  List of banned words is fetched from a URL , which is saved in src/main/resources/application.properties file. Change the URL from here , if you have another file.
+  
+  https://docs.google.com/spreadsheets/d/1hIEi2YG3ydav1E06Bzf2mQbGZ12kh2fe4ISgLg_UBuM/export?format=csv
 
 * **BUILD LOCAL INSTRUCTIONS**
 
