@@ -57,6 +57,7 @@ The project also contains a service for fetching large contentversion from the S
 * **Configuration**
 
   List of banned words is fetched from a URL , which is saved in src/main/resources/application.properties file. Change the URL from here , if you have another file.
+  
   https://docs.google.com/spreadsheets/d/1hIEi2YG3ydav1E06Bzf2mQbGZ12kh2fe4ISgLg_UBuM/export?format=csv
 
 * **BUILD LOCAL INSTRUCTIONS**
